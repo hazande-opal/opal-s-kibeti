@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="cart-header.css">
+</head>
+<body>
+    <!--Cart Header-->
+
+    <header class="cart-header">
+        <div class="left-section"><img class="amazon-logo" src="logos/amazon-logo-white.png" alt=""></div>
+        <div class="middle-section"><p class="check-out-message">Checkout (<span>3 items</span>)</p></div>
+        <div class="right-section"><span><ion-icon name="lock-closed-outline"></ion-icon></span></div>
+    </header>
+
+    <!--Cart Body-->
+<div class="cart-container js-cart-container">
+    <div class="cart-check-out-head">Review your order</div>
+
+    <!--Products in the Cart-->
+    
+    <div class="products-check-out">
+
+        <!--Individual Products-->
+        <div class="summarized-cart-products">
+            <div class="cart-product">
+                <div class="product-delivery-date">Delivery date: Tuesday, June 21</div>
+                <div class="items-to-be-delivered">
+                    <div class="item-image">
+                        <img class="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg" alt="">
+                    </div>
+                    <div class="item-description">
+                        <div class="product-title">Black and Gray Athletic Cotton Socks - 6 Pairs</div>
+                        <div class="product-price">$ 10.90</div>
+                        <div class="product-quantity">Quantity: 2 <a href="#Update">Update</a>  <a href="#Delete">Delete</a></div>
+                    </div>
+                    <div class="delivery-option">
+                        <div class="delivery-option-title">Choose a delivery option:</div>
+                        <div class="delivery-day">
+                            <div class="radio-container">
+                                <input type="radio" checked class="delivery-option-input" name="delivery-option-1">
+                            </div>
+                            <div class="shipping-day">
+                                <span class="span-1">Tuesday, June 21</span>
+                                <span class="span-2">FREE shipping</span>
+                            </div>
+                        </div>
+                        <div class="delivery-day">
+                            <div class="radio-container">
+                                <input type="radio" checked class="delivery-option-input" name="delivery-option-1">
+                            </div>
+                            <div class="shipping-day">
+                                <span class="span-1">Tuesday, June 21</span>
+                                <span class="span-2">FREE shipping</span>
+                            </div>
+                        </div>
+                        <div class="delivery-day">
+                            <div class="radio-container">
+                                <input type="radio" checked class="delivery-option-input" name="delivery-option-1">
+                            </div>
+                            <div class="shipping-day">
+                                <span class="span-1">Tuesday, June 21</span>
+                                <span class="span-2">FREE shipping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products-total-price">
+            <div class="total-price-header">Order Summary</div>
+            <div class="products-calculation">
+                <div class="sub-products-calculation">
+                    <span>Items (3):</span>
+                    <span>$42.75</span>
+                </div>
+                <div class="sub-products-calculation">
+                    <span>Shipping & handling:</span>
+                    <span>$4.99</span>
+                </div>
+            </div>
+            <div class="products-calculation">
+                <div class="sub-products-calculation">
+                    <span>Total before tax:</span>
+                    <span>$47.74</span>
+                </div>
+                <div class="sub-products-calculation" id="sub-products-calculation">
+                    <span>Estimated tax (10%):</span>
+                    <span>$4.77</span>
+                </div>
+            </div>
+            <div class="total-product-order">
+                <span>Order total:</span>
+                <span>$52.51</span>
+            </div>
+            <div class="button-container">
+                <button>Place your order</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="shop.js"></script>
+<script src="shop-cart.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
